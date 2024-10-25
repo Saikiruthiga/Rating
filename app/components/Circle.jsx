@@ -10,6 +10,9 @@ const Circle = ({ value }) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        "&:hover": {
+          background: "#fff",
+        },
       }}
     >
       {value}
