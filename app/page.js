@@ -1,6 +1,8 @@
-import { Box } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
+import Circle from "./components/Circle";
 
 export default function Home() {
+  const numbers = ["1", "2", "3", "4", "5"];
   return (
     <Box
       sx={{
@@ -19,16 +21,73 @@ export default function Home() {
           height: "400px",
           borderRadius: "25px",
           display: "flex",
+          paddingLeft: "1.5%",
+          paddingTop: "2%",
+          flexDirection: "column",
+          gap: "25px",
         }}
       >
+        <Circle
+          value={
+            <img
+              width="22"
+              height="22"
+              src="https://img.icons8.com/skeuomorphism/32/star.png"
+              alt="star"
+            />
+          }
+        />
+        <Typography
+          variant="h6"
+          color="#f5f5f5"
+          sx={{ fontWeight: "bold", fontSize: "25px" }}
+        >
+          How did we do ?
+        </Typography>
+        <Typography
+          sx={{ color: "rgba(242, 240, 239, 0.5)", marginTop: "-7px" }}
+        >
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </Typography>
         <Box
           sx={{
-            borderRadius: "50%",
-            backgroundColor: "green",
-            width: "50px",
-            height: "50px",
+            display: "flex",
+            justifyContent: "space-evenly",
+            marginLeft: "-15px",
           }}
-        ></Box>
+        >
+          {numbers.map((number, index) => (
+            <Circle
+              key={index}
+              value={
+                <Typography sx={{ color: "rgba(242, 240, 239, 0.5)" }}>
+                  {number}
+                </Typography>
+              }
+            />
+          ))}
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Button
+            variant="contained"
+            sx={{
+              backgroundColor: "orange",
+              width: "270px",
+              borderRadius: "15px",
+              color: "#000000",
+              fontWeight: "bold",
+            }}
+          >
+            Submit
+          </Button>
+        </Box>
       </Box>
     </Box>
   );
