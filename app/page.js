@@ -5,17 +5,17 @@ import { useState } from "react";
 import Acknowledgement from "./components/Acknowledment";
 
 export default function Home() {
-  const numbers = ["1", "2", "3", "4", "5"];
+  const numbers = [1, 2, 3, 4, 5];
   const [rating, setRating] = useState(null);
-  const [isClicked, setIsClicked] = useState(false);
   const [ack, setAck] = useState(false);
   const handleSubmit = () => {
-    setAck(true);
+    if (rating) {
+      setAck(true);
+    }
   };
 
   const handleClick = (number) => {
     setRating(number);
-    setIsClicked(true);
   };
 
   return (
@@ -83,7 +83,7 @@ export default function Home() {
               <Circle
                 key={index}
                 value={
-                  <Button
+                  <Box
                     sx={{
                       color: "rgba(242, 240, 239, 0.5)",
 
@@ -96,7 +96,7 @@ export default function Home() {
                     onClick={() => handleClick(number)}
                   >
                     {number}
-                  </Button>
+                  </Box>
                 }
               />
             ))}
