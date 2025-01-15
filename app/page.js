@@ -35,8 +35,8 @@ export default function Home() {
         <Box
           sx={{
             background: "linear-gradient(to bottom, #2c3338, #1b1e22)",
-            width: "400px",
-            height: "400px",
+            width: "450px",
+            height: "450px",
             borderRadius: "25px",
             display: "flex",
             paddingLeft: "1.5%",
