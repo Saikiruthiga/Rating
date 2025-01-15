@@ -66,7 +66,8 @@ export default function Home() {
             sx={{
               color: "rgba(242, 240, 239, 0.5)",
               marginTop: "-7px",
-              fontSize: "15px",
+              fontSize: "18x",
+              display: "flex",
             }}
           >
             Please let us know how we did with your support request. All
@@ -85,13 +86,25 @@ export default function Home() {
                 value={
                   <Box
                     sx={{
-                      color: "rgba(242, 240, 239, 0.5)",
+                      color:
+                        rating === number
+                          ? "#000000"
+                          : "rgba(242, 240, 239, 0.5)",
 
+                      backgroundColor:
+                        rating === number ? "#FC7614" : "transparent",
                       "&:hover": {
+                        backgroundColor: "#FFFFFF",
                         color: "#000000",
                       },
-                      backgroundColor:
-                        rating === number ? "#FC7614" : "transperant",
+                      cursor: "pointer",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      width: "50px",
+                      height: "50px",
+                      borderRadius: "50%",
+                      transition: "all 0.3s ease",
                     }}
                     onClick={() => handleClick(number)}
                   >
