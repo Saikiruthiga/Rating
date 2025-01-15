@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rating App
+
+A web application that allows users to provide feedback by rating. The app is built with **Next.js** and is deployed on **Vercel**.
+
+## Features
+
+- Users can select ratings from a scale (e.g., 1-5).
+- Dynamic hover effects and highlighted selection.
+- Fully responsive design for desktop and mobile.
+- Seamlessly hosted on Vercel for fast and reliable access.
+
+## Live Demo
+
+The app is live and accessible at: https://rating-teal.vercel.app/
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
+Ensure you have the following installed on your system:
+
+- **Node.js** (version 14 or higher)
+- **npm** (comes with Node.js)
+
+### Installation and Setup
+
+Follow the steps below to run the app locally:
+
+1. **Clone the Repository**  
+   Open your terminal and run:
+
+   git clone https://github.com/Saikiruthiga/Rating
+
+2.**Navigate to the app folder**
+cd my-app/app
+
+3.**Install dependencies**
+npm install
+
+4.**Run the development server**
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5.**Access the app**
+Open your browser and visit http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    Next.js: Framework for server-rendered React applications.
+    Vercel: Hosting and deployment.
+    CSS: Styling for hover effects and responsive design.
+    Material-UI (Optional): For reusable and accessible UI components.
 
-## Learn More
+Screenshots:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Rating page](image.png)
+![Acknowledgement page](image-1.png)
