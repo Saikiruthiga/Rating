@@ -48,7 +48,7 @@ Technologies Used
     Next.js: Framework for server-rendered React applications.
     Vercel: Hosting and deployment.
     CSS: Styling for hover effects and responsive design.
-    Material-UI (Optional): For reusable and accessible UI components.
+    Material-UI : For reusable and accessible UI components.
 
 Screenshots:
 
