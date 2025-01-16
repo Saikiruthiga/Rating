@@ -52,5 +52,5 @@ Technologies Used
 
 Screenshots:
 
-![Rating page](image.png)
-![Acknowledgement page](image-1.png)
+![Rating page](public/image.png)
+![Acknowledgement page](public/image-1.png)
