@@ -78,7 +78,7 @@ export default function Home() {
               display: "flex",
               justifyContent: "space-evenly",
               marginLeft: "-15px",
-            }} data test-id="rating-circles"
+            }} data-testid="rating-circles"
           >
             {numbers.map((number, index) => (
               <Circle
